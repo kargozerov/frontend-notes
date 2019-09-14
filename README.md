@@ -21,7 +21,7 @@ npm i -D babel-loader @babel/core @babel/preset-env core-js@3
   ]
 }
 * ul
-5) Создать основной конфиг для сборки  webpack.common.config.js
+5) Создать основной конфиг для сборки  webpack.config.js
 + ul
 module.exports = {
     entry: "./js/notes.js",
