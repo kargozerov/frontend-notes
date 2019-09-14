@@ -11,7 +11,7 @@ npm i webpack
 npm i -D babel-loader @babel/core @babel/preset-env core-js@3
 
 4) Создайте файл .babelrc, указываем, что нужно использовать полифиллы из corejs3, только по мере необходимости
-
++ ul
 {
   "presets": [
     ["@babel/preset-env", {
@@ -20,9 +20,9 @@ npm i -D babel-loader @babel/core @babel/preset-env core-js@3
     }]
   ]
 }
-
+* ul
 5) Создать основной конфиг для сборки  webpack.common.config.js
-
++ ul
 module.exports = {
     entry: "./js/notes.js",
     mode: "production",
@@ -39,4 +39,5 @@ module.exports = {
         ]
     }
 };
-
+* ul
+6) npx webpack  доустанавливаем выбираем y
