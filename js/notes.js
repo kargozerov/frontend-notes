@@ -1,5 +1,6 @@
 "use strict";
 window.addEventListener("load", () => {
+    new Promise(() => {});// холостой промис для того что бы бабель понял что нужно включить полифил для промиса
     const  app = new Vue({
         el:"#app",
         data:{
