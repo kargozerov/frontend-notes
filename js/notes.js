@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
             },
             sendNotes(){ //отправка запроса post
                 //filter( n => !n.deleted) - фильтруем не удаленные n -первая заметка (true - для тех которые не удалены)
-                axios.post("http://localhost:9000", this.notes.filter( n => !n.deleted))  //полная перезапись каждый раз новый массив
+                axios.post("https://backend-notes-node.herokuapp.com/", this.notes.filter( n => !n.deleted))  //полная перезапись каждый раз новый массив //для локального http://localhost:9000
                     .then((response) =>{
                         this.infoMessage = response.data.message; // из сервера res.json({status: "ok", message: "Заметки успешно сохранены"});
                         setTimeout( () => {this.infoMessage = "";}, 1800); //показать сообщегие и через 1,8 сек скрыть
@@ -92,7 +92,7 @@ window.addEventListener("load", () => {
         //mounted выполняется после того как приложение было впервый раз полностью отрисовано
         mounted(){
             //отправляем GET запрос по указаному адресу
-            axios.get('http://localhost:9000') //получить данные (фронт говорит дай мне данные)
+            axios.get('https://backend-notes-node.herokuapp.com/') //получить данные (фронт говорит дай мне данные) // для локального http://localhost:9000
                     .then(response => {  //response - информация от сервера response.data
                         //сохраняем в приложение данные полученые на сервере
                     this.notes = response.data;
