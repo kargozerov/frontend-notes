@@ -1,0 +1,30 @@
+{
+  "name": "frontend-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kargozerov/frontend-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kargozerov/frontend-notes/issues"
+  },
+  "homepage": "https://github.com/kargozerov/frontend-notes#readme",
+  "dependencies": {
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.2.1",
+    "webpack-cli": "^3.3.8"
+  }
+}
