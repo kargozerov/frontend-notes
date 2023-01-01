@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/kargozerov/frontend-notes#readme",
   "dependencies": {
-    "webpack": "^4.40.2"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.3.0",
     "core-js": "^3.2.1",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^5.0.1"
   }
 }
